@@ -1,0 +1,65 @@
+\documentclass[10pt, conference, compsocconf]{IEEEtran}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[brazilian]{babel}
+%\usepackage[latin1]{inputenc}
+\usepackage{verbatim}
+\usepackage{scalefnt}
+\usepackage{xcolor}
+\usepackage{ulem}
+\usepackage{type1cm}
+\usepackage{url}
+\usepackage{subfigure}
+\usepackage{courier}
+\newcommand{\TODO}[1]{{\color{red}\textbf{\uwave{#1}}}}
+
+\usepackage[pdftex]{graphicx}
+\DeclareGraphicsExtensions{.png}
+
+\title{Comunidade.UnB - Um estudo de caso de implantação e desenvolvimento de software livre na universidade.}
+
+\author{
+	\IEEEauthorblockN{Daniel Costa Bucher$^1$, Wilton Rodrigues$^1$, Paulo Meirelles$^1$}
+	\IEEEauthorblockA{
+		$^1$Faculdade do Gama\\
+		Universidade de Brasília, Brasil\\
+		\{daniel.bucher88,braynwilton\}@gmail.com, paulormm@unb.br
+	}
+
+%\and
+%
+%    \IEEEauthorblockN{Carlos Denner$$^2$}
+%    \IEEEauthorblockA{
+%        $^2$Departamento de Administração\\
+%        Universidade de Brasília, Brasil\\
+%        carlosdenner@unb.br
+%    }
+}
+
+%-------------------------------------------------------------------------------
+\begin{document}
+\normalem
+\def\UrlFont{\tt\footnotesize}
+\maketitle
+
+\input{01-abstract}
+
+\IEEEpeerreviewmaketitle
+
+%-------------------------------------------------------------------------------
+
+\input{02-introducao}
+
+\input{03-fundamentacao}
+
+\input{04-metodologia}
+
+\input{05-resultados}
+
+\input{06-conclusao}
+
+%-------------------------------------------------------------------------------
+
+\bibliographystyle{IEEEtran}
+\bibliography{myReferences}
+\end{document}

@@ -1,13 +1,15 @@
-all: bib tex
-	pdflatex comunidade-unb.tex
-	evince comunidade-unb.pdf &
+TARGET=article
 
-bib: comunidade-unb.bib
-	pdflatex comunidade-unb.tex
-	bibtex comunidade-unb
+all: $(TARGET).tex
+	pdflatex $(TARGET).tex
+	bibtex $(TARGET)
+	pdflatex $(TARGET).tex
+	pdflatex $(TARGET).tex
+	evince $(TARGET).pdf &
 
-tex: comunidade-unb.tex
-	pdflatex comunidade-unb.tex
+edit:
+	gedit Makefile *.bib *.tex &
 
 clean:
-	rm *.bbl *.aux *.blg *.log *.pdf
+	rm -f $(TARGET).pdf *.aux *.log *.blg *.bbl *.dvi *.ps *.toc *.lot *.lof *.idx *~
+
